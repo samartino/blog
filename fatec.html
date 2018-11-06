@@ -1,0 +1,102 @@
+<!DOCTYPE html">
+<html lang="pt-br">
+<head>
+    <title> Fatec</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css" media="all" />
+</head>
+<body>
+	<section>
+   <header>
+<img alt="cartao" longdesc="descricao.html"
+     src="imagens/banner.png" id="banner" />
+        </header>
+		<nav>
+          <ul>
+	          <li><a tabindex="1" title="home"
+                  			href="home.html"> Home </a></li>
+            <li><a tabindex="2"title="fatec" href="fatec.html"> Fatec </a></li>
+            <li><a tabindex="3"title="curso" href="curso.html"> Curso S.I </a></li>
+            <li><a tabindex="4"title="contato" href="contato.html"> Contato </a></li>
+			<li><a tabindex="4"title="sobre" href="sobre.html">Sobre Mim </a></li>
+	     </ul>			
+        </nav>
+		
+		<p id="art"> Fatec Jales Profº José Camargo </p>
+				<h1 id="fatec"> A Fatec Jales, foi criada pelo Decreto nº 52.122, de 3 de setembro de 2007, publicado no DOE de 4 de setembro de 2007, 
+				iniciou suas atividades em 10 de setembro de 2007, instalada em espaço concedido à Secretaria da Ciência, 
+				Tecnologia e Desenvolvimento Econômico pela Secretaria da Educação, de acordo com Decreto 51.068 de 24 de agosto de 2006. </h1>
+				
+
+					<div class="w3-container">
+  <h2> Instalações </h2>
+ 
+	</div>
+
+		<div id="slide" class="w3-content w3-display-container" style="max-width:800px">
+			<img class="mySlides" src="imagens/s1.webp" style="width:100%">
+			<img class="mySlides" src="imagens/s2.webp" style="width:100%">
+			<img class="mySlides" src="imagens/s3.webp" style="width:100%">
+			<img class="mySlides" src="imagens/s4.webp" style="width:100%">
+		<div id="botao" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"> Clique aqui! </div>
+    
+    
+	</div>
+		</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function plusDivs(n) {
+	showDivs(slideIndex += n);
+}
+
+	function currentDiv(n) {
+	showDivs(slideIndex = n);
+}
+
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	if (n > x.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+		</script>
+
+		
+			<h1 id="art"> Cursos Oferecidos <h1/>
+			<img alt="ads"  src="imagens/ads.png" id="cursos"/>
+			<img alt="ads"  src="imagens/sis.png" id="cursos"/> 
+			<img alt="ads"  src="imagens/agro.png" id="cursos" />
+			<img alt="ads"  src="imagens/gt.png" id="cursos" />
+	
+
+		
+				<h1 id="art"> Você sabia? </h1>
+				<img alt="int" id="inter" src="imagens/interrogacao.png"/>
+			<p id="curio"> Os cursos oferecidos pela Fatec são: <br/>
+		Superiores <br/> 100% gratuitos <br/> Reconhecidos pelo Mec
+		</p>
+
+
+
+
+
+
+<footer>
+            <p id="footer">Copyright &copy; Ana Beatriz Samartino, todos 
+			os direitos reservados.</p>
+		</footer>	
+	</section>	
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html">
+<html lang="pt-br">
+<head>
+    <title> Contato</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css" media="all" />
+</head>
+<body>
+	<section>
+   <header>
+<img alt="cartao" longdesc="descricao.html"
+     src="imagens/banner.png" id="banner"/>
+        </header>
+		<nav>
+          <ul>
+	          <li><a tabindex="1" title="home"
+                  			href="home.html"> Home </a></li>
+            <li><a tabindex="2"title="fatec" href="fatec.html"> Fatec </a></li>
+            <li><a tabindex="3"title="curso" href="curso.html"> Curso S.I </a></li>
+            <li><a tabindex="4"title="contato" href="contato.html"> Contato </a></li>
+			<li><a tabindex="4"title="sobre" href="sobre.html"> Sobre mim</a></li>
+	     </ul>			
+        </nav>
+
+			<p id="art"> Contatos </p>
+						<div class="w3-container">
+  <h2>  </h2>
+ 
+	</div>
+
+		<div id="slide" class="w3-content w3-display-container" style="max-width:800px">
+			<img class="mySlides" src="imagens/contatofatec.png" style="width:100%">
+			<img class="mySlides" src="imagens/contatobia.png" style="width:100%">
+		
+		<div id="botao" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"> Clique aqui! </div>
+    
+    
+	</div>
+		</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function plusDivs(n) {
+	showDivs(slideIndex += n);
+}
+
+	function currentDiv(n) {
+	showDivs(slideIndex = n);
+}
+
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	if (n > x.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+		</script>
+
+
+
+
+
+
+<footer>
+            <p id="footer">Copyright &copy; Ana Beatriz Samartino, todos 
+			os direitos reservados.</p>
+		</footer>	
+		</section>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html">
+<html lang="pt-br">
+<head>
+    <title> Sobre Mim </title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css" media="all"/>
+	
+</head>
+<body>
+	<section>
+   <header>
+<img alt="cartao" longdesc="descricao.html"
+     src="imagens/banner.png" id="banner"/>
+        </header>
+		<nav>
+          <ul>
+	          <li><a tabindex="1" title="home"
+                  			href="home.html"> Home </a></li>
+            <li><a tabindex="2"title="fatec" href="fatec.html"> Fatec </a></li>
+            <li><a tabindex="3"title="curso" href="curso.html"> Curso S.I </a></li>
+            <li><a tabindex="4"title="contato" href="contato.html"> Contato </a></li>
+			<li><a tabindex="4"title="sobre" href="sobre.html"> Sobre mim</a></li>
+	     </ul>			
+        </nav>
+		<img alt="ana" src="imagens/bea.png" id="bea"/>
+			
+		<h1 id="sobreeu"> Olá meu nome Ana Beatriz, 19 anos e residente de Fernandópolis. <br/>
+						Técnica Contabil formada pela Etec Fernandópolis e atualmente universitária em Sistemas 
+					para Internet na Fatec Jales. <h1>
+					
+		<h1 id="portif"> Portifório </h1>
+
+			<div class="w3-container">
+  <h2> Cartão de Visita </h2>
+ 
+	</div>
+
+<div id="slide" class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="imagens/frente.png" style="width:100%">
+  <img class="mySlides" src="imagens/verso.png" style="width:100%">
+    <div id="botao" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"> Clique aqui! </div>
+    
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+		
+		<h1 id="art"> Artigo </h1>
+		
+		<h2> Redes Sociais no âmbito empresarial </h2>
+		<p id="artigo">   As redes sociais atualmente passam de meios de entretenimento e comunicação pessoal, alcança credibilidade 
+		no âmbito empresarial substancialmente, aproximando cliente e organização, convertendo ideologias que vão além de divulgação,
+		marketing e propagandas, influenciando modificação no mercado, evoluindo estrategicamente. <br/>
+		Em uma pesquisa feita com alguns colegas através de um simples formulário do google, 
+		pude avaliar que aproximadamente 95% das pessoas pesquisam e seguem empresas nas redes sociais.<br/>
+		E você? Na sua perspectiva ter redes sociais âmbito empresarial é viável? Com a ferramenta de enquete do aplicativo “Instagram”,
+		interagi com meus seguidores sobre o assunto, cerca de 110 pessoas participaram espontaneamente do breve “quiz”
+		e 100% das mesmas anuem que como cliente consideram que negócios e redes sociais formam um elo par. <br/>
+		Ao bater um papo com os empresários Leonardo e Fernando da PyxSoftware (empresa de desenvolvimento de software e gestão de mídias sociais, 
+		localizada em Fernandópolis), extrai que as empresas estão atentas a essa evolução de mercado, 
+		e a cada dia estão à procura de estratégias, além de estarem se adequando e evoluindo quanto ao assunto, e enxergam grandes benefícios. 
+		Porém tratando se de negócios, é necessário precaução, analises para realizar o manuseio corretos das ferramentas sociais. <br/>
+		Se utilizadas corretamente e constantemente planejada causam referencias positivas, credibilidade tecnologia e identidade social, 
+		ressaltando que tais ações e informações influenciam até mesmo nas tomadas de decisões de uma gestão. <br/>
+		Diante disso, planejamento correto é benéfico, abrindo caminhos que vão desde comunicação, divulgação, identidade empresarial na web,
+		até mesmo alcance publicitários com custo baixo. Estar atento as mudanças e interação cliente e empresa e primordial. </p>
+		
+		<h1 id="art"> Estrutura de programinhas C </h1>
+		
+					<div class="w3-container">
+  <h2> Laços de Repetição </h2>
+ 
+	</div>
+
+		<div id="slide" class="w3-content w3-display-container" style="max-width:800px">
+			<img class="mySlides" src="imagens/while.png" style="width:100%">
+			<img class="mySlides" src="imagens/for.png" style="width:100%">
+			<img class="mySlides" src="imagens/else.png" style="width:100%">
+		<div id="botao" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"> Clique aqui! </div>
+    
+    
+	</div>
+		</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function plusDivs(n) {
+	showDivs(slideIndex += n);
+}
+
+	function currentDiv(n) {
+	showDivs(slideIndex = n);
+}
+
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	if (n > x.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+		</script>
+
+		
+		
+		
+
+		
+
+
+
+
+
+<footer>
+            <p id="footer">Copyright &copy; Ana Beatriz Samartino, todos 
+			os direitos reservados.</p>
+		</footer>	
+		</section>
+</body>
+</html>
