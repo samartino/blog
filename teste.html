@@ -14,15 +14,14 @@
         </header>
 		<nav>
           <ul>
-	        <li><a tabindex="1" title="home" href="home.html"> Home </a></li>
-            <li><a tabindex="2"title="Fatec" href="fatec.html"> Fatec </a></li>
-            <li><a tabindex="3"title="Curso" href="curso.html"> Curso S.I </a></li>
+	        <li><a tabindex="1" title="home" href="#home"> Home </a></li>
+            <li><a tabindex="2"title="Fatec" href="#fatec"> Fatec </a></li>
+            <li><a tabindex="3"title="I semestre" href="semestre"> I semestre </a></li>
             <li><a tabindex="4"title="Sobre" href="#sobre"> Sobre</a></li>
 			 <li><a tabindex="4"title="Contato" href="contato.html"> Contato </a></li>
 	     </ul>			
         </nav>
-
-	    
+		<section id="home">
 		   <h2> Bem vindo ao blog da Ana Beatriz Samartino! </h2>
             
             <p id="aqui"> Aqui você conhecerá  a Fatec Jales, o Curso Sistemas para Internet aos meus olhos.</p>
@@ -30,7 +29,76 @@
             <p id="aqui"> Sentirá a essencia de nossos mestres, da estrutura Fatec, além de se encantar por tudo isso!</p>
 			<p id="aqui"> Vamos nessa? </p>
 			<h2>  Navegue pelo menu! </h2>
-			
+		</section>	
+		<section id="fatec">
+				
+		<p id="art"> Fatec Jales Profº José Camargo </p>
+				<h1 id="fatec"> A Fatec Jales, foi criada pelo Decreto nº 52.122, de 3 de setembro de 2007, publicado no DOE de 4 de setembro de 2007, 
+				iniciou suas atividades em 10 de setembro de 2007, instalada em espaço concedido à Secretaria da Ciência, 
+				Tecnologia e Desenvolvimento Econômico pela Secretaria da Educação, de acordo com Decreto 51.068 de 24 de agosto de 2006. </h1>
+				
+
+					<div class="w3-container">
+  <h2> Instalações </h2>
+ 
+	</div>
+
+		<div id="slide" class="w3-content w3-display-container" style="max-width:800px">
+			<img class="mySlides" src="imagens/s1.webp" style="width:100%">
+			<img class="mySlides" src="imagens/s2.webp" style="width:100%">
+			<img class="mySlides" src="imagens/s3.webp" style="width:100%">
+			<img class="mySlides" src="imagens/s4.webp" style="width:100%">
+		<div id="botao" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"> Clique aqui! </div>
+    
+    
+	</div>
+		</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function plusDivs(n) {
+	showDivs(slideIndex += n);
+}
+
+	function currentDiv(n) {
+	showDivs(slideIndex = n);
+}
+
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	if (n > x.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+		</script>
+
+		
+			<h1 id="art"> Cursos Oferecidos <h1/>
+			<img alt="ads"  src="imagens/ads.png" id="cursos"/>
+			<img alt="ads"  src="imagens/sis.png" id="cursos"/> 
+			<img alt="ads"  src="imagens/agro.png" id="cursos" />
+			<img alt="ads"  src="imagens/gt.png" id="cursos" />
+	
+
+		
+				<h1 id="art"> Você sabia? </h1>
+				<img alt="int" id="inter" src="imagens/interrogacao.png"/>
+			<p id="curio"> Os cursos oferecidos pela Fatec são: <br/>
+		Superiores <br/> 100% gratuitos <br/> Reconhecidos pelo Mec
+		</p>
+	</section>
+
 				<section id="sobre">
 					<img alt="ana" src="imagens/bea.png" id="bea"/>
 			
@@ -148,9 +216,59 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 		</script>
-
+			</section>	
+		<section id="semestre">
 		
-	</section>	
+			  <aside id="galeria"> 
+            <h2> Nossos Mestres </h2>
+            <ul>
+                <li><img alt="selma" src="imagens/selma.jpg" /></li>
+                <li><img alt="andrea" src="imagens/andrea.jpg" /></li>
+                <li><img alt="jorge" src="imagens/jorge.jpg" /></li>
+                <li><img alt="ligia" src="imagens/ligia.jpg" /></li>
+				<li><img alt="alexandre" src="imagens/alexandre.jpg" /></li>
+				<li><img alt="fabiana" src="imagens/fabiana.jpg" /></li>
+				<li><img alt="carlos" src="imagens/carlos.jpg" /></li>
+				<li><img alt="tiago" src="imagens/tiago.jpg" /></li>
+            </ul>
+        </aside>
+			
+				<h1 id="dis"> Disciplinas </h1>
+				
+				<h2 id="materia"> Algoritmos e Lógica de Programação <h2/>
+			<p id="disc"> Conceitos básicos sobre algoritmos e métodos para sua <br/> construção, desenvolvendo habilidades 
+				para a criar soluções <br/> de problemas e desenvolver programas. </p>
+				
+				<h2 id="materia"> Inglês I </h2>
+			<p id="disc"> Introdução à compreensão e produção oral e escrita por meio <br/> da integração das habilidades 
+			Além de desenvolver as <br/> quatro habilidades, reading, listening, writing e speaking. </p>
+			
+				<h2 id="materia"> Bases da Internet </h2>
+			<p id="disc"> Introdução a Internet, fornecendo conceitos, história. <br/> Principios  sobre segurança que viabilizam a web,<br/> 
+						fornecendo conhecimentos sobre golpes e ataques. </p>
+			
+				<h2 id="materia"> Criação de Conteúdo na Web </h2>
+			<p id="disc">  Adequação comunicativa em diferentes situações de interação <br/> e plataformas como blogs, redes sociais, e sites.<br/>
+				Apresentação de	planejamento de produção de conteúdo <br/> textual, escrita e edição de conteúdo para Web. </p>
+			
+				<h2 id="materia"> Design Digital </h2>
+			<p id="disc"> Com auxilio das ferramentas Corel Draw e Adobe Photoshop, é realizado otimização de imagens para padrões Web de composição,
+			além de criar  marcas, cartões de visitas e logos. </p>
+			
+				<h2 id="materia"> Padrões de Projeto de Sítios Internet I </h2>
+			<p id="disc"> Padrões de projeto para Web.Elementos básicos dos conceitos de Web Design.
+			Enfase em HTML e CSS. Conceitos de web semantica e padrões. </p>
+			
+				<h2 id="materia"> Leitura e Produção de Textos </h2>
+			<p id="disc"> A comunicação na atualidade, aplicado através de conceitos e estrategias, 
+				com intuito de aprimorar e utilizar tais hailidades em ambientes profissionais. <p/>
+				
+				<h2 id="materia"> Fundamentos de Matemática Elementar </h2>
+			<p id="disc"> Conjuntos Numéricos. Regras de Três. Frações. Porcentagem. Potenciação e Notação Científica. 
+			Radiciação. Logaritmos. Polinômios. Fatoração e Produtos Notáveis. Matrizes. Equações e inequações do 1º e 2º graus. </p>
+			
+	</section> 
+
 			
        
   	<footer>
